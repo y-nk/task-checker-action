@@ -1,0 +1,35 @@
+{
+  "name": "task-checker-action",
+  "version": "1.0.0",
+  "description": "A simple github action to check PR tasks",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.js --bundle --platform=node --outfile=dist/index.js",
+    "version": "npm run build && auto-changelog --config ./.autochangelog/config.json && git add .",
+    "postversion": "git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y-nk/task-checker-action.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "pull-request",
+    "regexp"
+  ],
+  "author": "Julien Barbay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/y-nk/task-checker-action/issues"
+  },
+  "homepage": "https://github.com/y-nk/task-checker-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  },
+  "devDependencies": {
+    "auto-changelog": "^2.3.0",
+    "esbuild": "^0.13.8"
+  }
+}

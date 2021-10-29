@@ -1,0 +1,15 @@
+name: PR task checker
+description: Validate that PR checks are ticked
+
+inputs:
+  skip_on:
+    description: The label used for skipping verification
+    required: false
+
+runs:
+  using: node12
+  main: dist/index.js
+
+branding:
+  icon: git-branch
+  color: gray-dark

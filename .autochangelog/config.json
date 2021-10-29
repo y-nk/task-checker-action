@@ -1,0 +1,7 @@
+{
+  "output": "CHANGELOG.md",
+  "package": true,
+  "commitLimit": false,
+  "template": "./.autochangelog/template.hbs",
+  "handlebarsSetup": "./.autochangelog/setup.js"
+}
