@@ -1,6 +1,6 @@
 {
   "name": "task-checker-action",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A simple github action to check PR tasks",
   "main": "index.js",
   "scripts": {
